@@ -1,7 +1,10 @@
 <div class="main">
     <h1 class="hero-title">{{ title }}</h1>
     <div class="main-container">
-        <app-heroes></app-heroes>
+        <nav>
+            <a routerLink="/heroes">Heroes</a>
+        </nav>
+        <router-outlet></router-outlet>
         <app-messages></app-messages>
     </div>
 </div>
