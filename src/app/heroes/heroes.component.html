@@ -1,8 +1,8 @@
 <h3 class="title-list">My Heroes</h3>
 <ul class="list-heroes">
-    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-        {{hero.name}}
+    <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+        </a>
     </li>
 </ul>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
