@@ -1,8 +1,29 @@
+@import '../assets/common-styles';
 .hero-title {
     padding: 3.5rem;
-    font-size: 5rem;
-    color: #fff;
-    text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.9);
     background: url('https://fsmedia.imgix.net/3e/5a/2a/a0/c2af/441d/8fa0/5b47329d7333/heroes-in-crisis-1-cover-illustrated-by-clay-mann.jpeg?rect=0%2C406%2C781%2C391&auto=format%2Ccompress&dpr=2&w=650') no-repeat center top -170px;
-    border-radius: 10px;
+    h1 {
+        font-size: 5rem;
+        color: #fff;
+        text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.9);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0;
+    .nav-item {
+        margin: 0 20px 0 0;
+        display: block;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        background: #EAA266;
+        color: #fff;
+        font-size: 22px;
+        transition: background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        &:hover {
+            background: #B93C2B;
+        }
+    }
 }

@@ -1,10 +1,12 @@
 <div class="main">
-    <h1 class="hero-title">{{ title }}</h1>
-    <div class="main-container">
+    <div class="hero-title">
+        <h1>{{ title }}</h1>
         <nav>
-            <a routerLink="/dashboard">Dashboard</a>
-            <a routerLink="/heroes">Heroes</a>
+            <a class="nav-item" routerLink="/dashboard">Dashboard</a>
+            <a class="nav-item" routerLink="/heroes">Heroes</a>
         </nav>
+    </div>
+    <div class="main-container">
         <router-outlet></router-outlet>
         <app-messages></app-messages>
     </div>
